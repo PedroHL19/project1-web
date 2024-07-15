@@ -1,107 +1,110 @@
-
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Reset básico */
+* {
     margin: 0;
-    display: flex;
-    justify-content: flex-start; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #333;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color: #ddd; 
-    color: #000; 
-}
-
+/* Estilo do corpo */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background: url('../img/fundo.jpg');
+    
+    color: #222;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilo do cabeçalho e footer */
+header, footer {
     padding: 20px;
-    text-align: center; 
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+header h1 {
+    font-size:40px;
+    text-shadow: 2px 4px 4px rgba(200, 200, 200, 0.5);
 }
 
-
-.sobre-site {
-    margin-bottom: 20px;
+footer p {
+    font-size: 16px;
+    text-shadow: 2px 4px 4px rgba(200, 200, 200, 0.5);
 }
 
-
+/* Estilo principal */
 main {
-    margin: 20px 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-main section {
-    background: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-}
+/* Estilo das seções */
 
+/* Estilo do catálogo */
 .catalogo {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 60px; /* Aumenta a distância entre os destinos */
+    max-width: 1200px; /* Aumenta a largura máxima dos destinos */
+    padding: 20px;
 }
 
-.catalogo .destino {
-    flex: 1 1 calc(33.33% - 40px); 
-    max-width: calc(33.33% - 40px);
+/* Estilo dos destinos */
+.destino {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px; /* Aumenta a largura dos boxes */
+    height: 300px; /* Diminui a altura dos boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.catalogo .destino img {
+.destino:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.destino img {
     width: 100%;
-    height: auto;
-    max-width: 400px; 
-    max-height: 300px; 
+    height: 100%;
     object-fit: cover;
-    border: 1px solid #ddd;
-    padding: 10px;
-    transition: transform 0.3s;
 }
 
-.catalogo .destino img:hover {
-    transform: scale(1.1);
+/* Estilo dos títulos dos destinos */
+.destino h3 {
+    font-size: 20px; 
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 25px 5px 25px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.50s ease , opacity 0.50s ease;
+    bottom: -60px; 
+    opacity: 0;
 }
 
-.catalogo .destino h3 {
-    margin-top: 10px;
+.destino:hover h3 {
+    bottom: 10px; /* Move-se para dentro da visão */
+    opacity: 1;
 }
 
-.destino-imagem, .outra-imagem, .imagem-hospedagem {
-    width: 80%;
-    max-width: 500px;  
-    height: 500px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
+/* Estilo dos links */
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
-.sobre, .dicas, .hospedagem {
-    margin-bottom: 20px;
-    text-align: left; 
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
+a:hover {
+    color: #b8c1ec;
 }

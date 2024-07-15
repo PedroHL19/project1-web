@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disneyland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      
+        body {
+            background: linear-gradient(90deg, #87CEEB, #FFD700, #FF6347);
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+  
+        header {
+            background: rgba(255,255,255, 0.5);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+            color: #333;
+            margin:0
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #ff3366;
+        }
+        
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        article {
+            max-width: 900px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0px 20px 0px;
+        }
+        
+        .imagem-dicas, .imagem-sobre, .imagem-hospedagem {
+            width: 100%;
+        
+            height: auto;
+            max-height: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+            object-fit: cover; 
+            max-width: 800px; 
+            margin: 20px 0px 20px 0px;
+        }
+        .figure-dicas{
+            display: grid;
+
+           
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.5rem;
+            
+            
+           
+        }
+      
+        footer {
+            background: rgba(255,255,255, 0.5);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+        
+        footer p {
+            font-size: 1rem;
+            text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+            color: #333;
+          
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Parque Guanabara!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#hospedagem">Hospedagem</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="sobre">
+            <article>
+                <h2>Sobre o Parque Guanabara</h2>
+                <p>A Disney começou com a Disneyland na Califórnia, aberta por Walt Disney em 1955 como um parque temático inovador que combinava entretenimento, fantasia e tecnologia. O sucesso da Disneyland levou à criação de outros parques ao redor do mundo, incluindo o Walt Disney World Resort em Orlando, inaugurado em 1971. Hoje, a Disney é uma marca global de entretenimento que engloba filmes, parques temáticos, produtos de consumo e muito mais, continuando a encantar gerações com suas histórias e personagens icônicos.</p>
+            </article>
+        </section>
+        <figure>
+            <img src="img/Guanabara/guanabara.jpg" alt="Guanabara" class="imagem-sobre">
+        </figure>
+        
+        <section id="dicas">
+            <article>
+                <h2>Dicas e Atrações</h2>
+                <p>Para aproveitar ao máximo sua visita à Disney em Orlando, recomenda-se planejar com antecedência. Reserve ingressos e hospedagem com antecedência, especialmente durante os períodos de alta temporada. Utilize o My Disney Experience para gerenciar seu itinerário, fazer reservas em restaurantes e acessar o FastPass+ para evitar filas.</p>
+                <p>Suas mais famosas atrações:</p>
+                <ul>
+                    <li><strong>Magic Kingdom:</strong> Castelo da Cinderela, Space Mountain, Pirates of the Caribbean.</li>
+                    <li><strong>Epcot:</strong> Spaceship Earth, Test Track, World Showcase.</li>
+                    <li><strong>Disney's Hollywood Studios:</strong>Star Wars: Galaxy's Edge, Toy Story Land, Tower of Terror.</li>
+                    <li><strong>Disney's Animal Kingdom:</strong> Kilimanjaro Safaris, Expedition Everest, Pandora - The World of Avatar.</li>
+                </ul>
+                
+            </article>
+        </section>
+        <figure class="figure-dicas">
+            <img src="img/Guanabara/guanabara2.jpg" alt="Guanabara" class="imagem-dicas">
+            <img src="img/Guanabara/guanabara3.jpg" alt="Guanabara" class="imagem-dicas">
+            <img src="img/Guanabara/guanabra4.jpg" alt="Guanabara" class="imagem-dicas">
+            <img src="img/Guanabara/guanabara 5.jpg" alt="Guanabara" class="imagem-dicas">
+            
+        </figure>
+       
+        <section id="hospedagem">
+            <article>
+                <h2>Hospedagem</h2>
+                <p>O Walt Disney World Resort oferece uma variedade de opções de hospedagem, desde hotéis de luxo até opções mais econômicas:</p>
+            
+                <ul>
+                    <li><strong>Hotéis de Luxo:</strong> Disney's Grand Floridian Resort & Spa, Disney's Contemporary Resort.</li>
+                    <li><strong>Hotéis mais Econômicos:</strong> Disney's Caribbean Beach Resort, Disney's Pop Century Resort.</li>
+                    <li><strong>Como Chegar:</strong> O Walt Disney World Resort está localizado em Orlando, Flórida. O aeroporto mais próximo é o Aeroporto Internacional de Orlando (MCO), que recebe voos de todo o mundo. Do aeroporto, há serviços de ônibus, táxi e transferência da Disney para os resorts dentro do complexo.</li>
+                    
+                </ul>
+            </article>
+        </section>
+        <figure>
+           
+            
+        </section>
+    </main>
+    <footer>
+        <p>Até o nosso próximo destino!</p>
+    </footer>
+</body>
+</html>
