@@ -6,10 +6,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo do corpo */
 body {
     background: url('../img/fundo.jpg');
-    
     color: #222;
     text-align: center;
     height: 100vh;
@@ -18,7 +16,6 @@ body {
     justify-content: space-between;
 }
 
-/* Estilo do cabeçalho e footer */
 header, footer {
     padding: 20px;
     background: rgba(255, 255, 255, 0.7);
@@ -26,7 +23,7 @@ header, footer {
 }
 
 header h1 {
-    font-size:40px;
+    font-size: 40px;
     text-shadow: 2px 4px 4px rgba(200, 200, 200, 0.5);
 }
 
@@ -35,7 +32,6 @@ footer p {
     text-shadow: 2px 4px 4px rgba(200, 200, 200, 0.5);
 }
 
-/* Estilo principal */
 main {
     flex: 1;
     display: flex;
@@ -44,25 +40,21 @@ main {
     align-items: center;
 }
 
-/* Estilo das seções */
-
-/* Estilo do catálogo */
 .catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px; /* Aumenta a distância entre os destinos */
-    max-width: 1200px; /* Aumenta a largura máxima dos destinos */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 80px; 
+    max-width: 100%; 
     padding: 20px;
+    justify-items: center; 
 }
 
-/* Estilo dos destinos */
 .destino {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     overflow: hidden;
-    width: 300px; /* Aumenta a largura dos boxes */
-    height: 300px; /* Diminui a altura dos boxes */
+    width: 450px; 
+    height: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     text-align: center;
@@ -80,26 +72,24 @@ main {
     object-fit: cover;
 }
 
-/* Estilo dos títulos dos destinos */
 .destino h3 {
-    font-size: 20px; 
+    font-size: 20px;
     background: rgba(255, 255, 255, 0.7);
-    padding: 5px 25px 5px 25px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: bottom 0.50s ease , opacity 0.50s ease;
-    bottom: -60px; 
+    transition: bottom 0.50s ease, opacity 0.50s ease;
+    bottom: -60px;
     opacity: 0;
 }
 
 .destino:hover h3 {
-    bottom: 10px; /* Move-se para dentro da visão */
+    bottom: 10px;
     opacity: 1;
 }
 
-/* Estilo dos links */
 a {
     text-decoration: none;
     color: #fff;
