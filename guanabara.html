@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paarque Guanabara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      
+        body {
+            background: linear-gradient(45deg, #87CEEB, #FFD700, #FF6347);
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+  
+        header {
+            background: rgba(255,255,255, 0.5);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+            color: #333;
+            transition: transform 0.3s ease;
+            margin:0px 0px 0px 40px;
+        }
+        header h1:hover{
+            transform: scale(1.25);
+        
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color:  #FF6347;
+            text-decoration: underline;
+        }
+        
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        article {
+            max-width: 900px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0px 20px 0px;
+        }
+        
+        .imagem-dicas, .imagem-sobre, .imagem-hospedagem {
+            width: 100%;
+        
+            height: auto;
+            max-height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover; 
+            max-width: 800px; 
+            margin: 20px 0px 20px 0px;
+        }
+        .imagem-sobre{
+            max-height: 700px;
+        }
+        .figure-dicas{
+            display: grid;
+
+           
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.5rem;
+            
+            
+           
+        }
+      
+        footer {
+            background: rgba(255,255,255, 0.5);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+        
+        footer p {
+            font-size: 1rem;
+            text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+            color: #333;
+          
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Parque Guanabara!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#hospedagem">Hospedagem</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="sobre">
+            <article>
+                <h2>Sobre o Parque Guanabara</h2>
+                <p>O Parque Guanabara, localizado na orla da Lagoa da Pampulha em Belo Horizonte, Minas Gerais, foi inaugurado em 1951. Desde a sua abertura, o parque se tornou um ponto de referência para o lazer e entretenimento na cidade. Fundado por Julio Lóssio, o parque começou com poucos brinquedos, mas ao longo dos anos, expandiu-se e modernizou suas atrações. Hoje, o Parque Guanabara é conhecido por seu ambiente familiar, atrações variadas e vista deslumbrante para a lagoa, atraindo tanto moradores locais quanto turistas.</p>
+            </article>
+        </section>
+        <figure>
+           
+            <img src="img/Guanabara/guanabara2.jpg" alt="Guanabara" class="imagem-sobre">
+        </figure>
+        
+        <section id="dicas">
+            <article>
+                <h2>Dicas e Atrações</h2>
+                <p>Para garantir uma experiência agradável e sem contratempos no Parque Guanabara, algumas dicas são fundamentais:</p>
+                <ul>
+                    <li><strong>Melhor época para visitar:</strong> Para evitar grandes multidões, prefira visitar o parque durante a semana. Finais de semana e feriados tendem a ser mais movimentados.</li>
+                    <li><strong>Ingressos:</strong> O parque utiliza um sistema de cartão recarregável para acesso às atrações. Adquira créditos antecipadamente pelo site oficial do parque para evitar filas e ganhar tempo.</li>
+                    <li><strong>Outras dicas:</strong> Muitas das atrações são ao ar livre, portanto, não se esqueça de levar protetor solar, chapéu ou boné, e óculos de sol para se proteger dos raios UV.O parque possui várias opções de alimentação, mas é sempre uma boa ideia levar uma garrafa de água para se manter hidratado ao longo do dia.Chegue cedo para aproveitar ao máximo as atrações. Faça um planejamento prévio das atrações que deseja visitar para otimizar seu tempo dentro do parque.</li>
+                </ul>
+                <p>O Parque Guanabara oferece uma ampla gama de atrações para todas as idades, são elas:</p>
+                <ul>
+                    <li><strong>Roda Gigante:</strong> Uma das mais icônicas atrações do parque, oferece uma vista panorâmica da Lagoa da Pampulha.</li>
+                    <li><strong>Carrossel:</strong> Um clássico que encanta crianças e adultos.</li>
+                    <li><strong>Trem Fantasma:</strong> Uma atração assustadora e divertida para os corajosos.</li>
+                    <li><strong>Piratas do Caribe:</strong> Um brinquedo muito divertido que te faz ir às alturas!</li>
+                    <li><strong>Sky Fall:</strong> Essa atração te faz perder o ar, literalmente. O Sky Fall é um brinquedo que te chega a mais de 60 metros de altura e cai em "queda livre" até o chão.</li>
+                    <li><strong>Cataclisma:</strong> O brinquedo que te deixa de cabeça para baixo!!!!! É uma excelente opção aos amantes de aventura e aqueles que gostam de sentir um friozinho na barriga.</li>
+                </ul>
+            </article>
+        </section>
+        <figure class="figure-dicas">
+            <img src="img/Guanabara/guanabara.jpg" alt="Guanabara" class="imagem-dicas">
+            <img src="img/Guanabara/guanabara3.jpg" alt="Guanabara" class="imagem-dicas">
+            <img src="img/Guanabara/guanabra4.jpg" alt="Guanabara" class="imagem-dicas">
+            <img src="img/Guanabara/guanabara5.jpg" alt="Guanabara" class="imagem-dicas">
+            
+        </figure>
+       
+        <section id="hospedagem">
+            <article>
+                <h2>Hospedagem</h2>
+                <p>Existem diversas opções de hospedagem próximas ao Parque Guanabara. Alguns hotéis recomendados incluem o Ouro Minas Palace Hotel, San Diego Suites Pampulha e Bristol Pampulha Lieu. Para quem prefere alugar por temporada, há opções no Airbnb, oferecendo desde apartamentos até casas maiores para grupos.</p>
+                <p>Para chegar ao parque, há várias opções:</p>
+                <ul>
+                    <li><strong>De carro:</strong> O parque está localizado na Avenida Otacílio Negrão de Lima, uma via principal da cidade, com estacionamento disponível nas proximidades.</li>
+                    <li><strong>Transporte público:</strong>  Diversas linhas de ônibus passam pela região da Pampulha, facilitando o acesso ao parque.</li>
+                    <li><strong>Táxi/Aplicativos de transporte:</strong> Serviços como Uber e 99 são uma boa opção para chegar ao parque, especialmente se você não estiver familiarizado com o transporte público local.</li>
+                    
+                </ul>
+            </article>
+        </section>
+        <figure>
+            <img src="img/Guanabara/guanabara6.jpg" alt="Guanabara" class="imagem-hospedagem">
+            
+        </section>
+    </main>
+    <footer>
+        <p>Até o nosso próximo destino!</p>
+    </footer>
+</body>
+</html>

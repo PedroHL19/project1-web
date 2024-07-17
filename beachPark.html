@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Park</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      
+        body {
+            background:linear-gradient(160deg, #f7f1e3, #1abc9c, #2ecc71, #3498db);
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+  
+        header {
+            background: rgba(255,255,255, 0.5);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+            color: #333;
+            transition: transform 0.3s ease;
+            margin:0px 0px 0px 20px;
+        }
+        header h1:hover{
+            transform: scale(1.25);
+        
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            transition: color 0.2s ease;
+        }
+        
+        nav ul li a:hover {
+            color:  #87CEEB;
+            text-decoration: underline;
+        }
+        
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        article {
+            max-width: 900px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0px 20px 0px;
+        }
+        
+        .imagem-dicas, .imagem-sobre, .imagem-hospedagem {
+            width: 100%;
+        
+            height: auto;
+            max-height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover; 
+            max-width: 800px; 
+            margin: 20px 0px 20px 0px;
+        }
+        .imagem-sobre{
+            max-height: 500px;
+            
+        }
+        .figure-dicas{
+            display: grid;
+
+           
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.5rem;
+            
+            
+           
+        }
+      
+        footer {
+            background: rgba(255,255,255, 0.5);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+        
+        footer p {
+            font-size: 1rem;
+            text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+            color: #333;
+          
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beach Park</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#hospedagem">Hospedagem</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="sobre">
+            <article>
+                <h2>Sobre o Beach Park</h2>
+                <p>O Beach Park teve sua origem em 1989, quando um grupo de empresários cearenses decidiu criar um parque aquático para atrair turistas para a região de Porto das Dunas, em Aquiraz, Ceará. Inicialmente concebido como um parque modesto, ao longo dos anos, cresceu em popularidade e estrutura, tornando-se um dos maiores complexos de entretenimento da América Latina.</p>
+                <p>Hoje, o Beach Park não é apenas um parque aquático, mas um destino turístico completo. Além das atrações aquáticas, o complexo inclui resorts de luxo, opções gastronômicas variadas, áreas de lazer para toda a família e uma praia privativa. É conhecido por sua infraestrutura moderna e pela diversão garantida para visitantes de todas as idades.</p>
+            </article>
+        </section>
+        <figure>
+           
+            <img src="img/BeachPark/parque.jpeg" alt="Beach" class="imagem-sobre">
+        </figure>
+        
+        <section id="dicas">
+            <article>
+                <h2>Dicas e Atrações</h2>
+                <p>Antes de embarcar nesta jornada de diversão aquática, é recomendável planejar sua visita com antecedência para evitar grandes multidões e aproveitar ao máximo todas as atrações que o Beach Park tem a oferecer. Além disso, fique ligados nessas dicas:</p>
+                <ul>
+                    <li><strong>Melhor época para visitar: </strong> A melhor época para visitar é durante os meses mais tranquilos, de maio a novembro, quando o clima é mais ameno e há menos visitantes. Evite os fins de semana prolongados e feriados, pois esses períodos costumam ser mais movimentados.</li>
+                    <li><strong>Cuidados: </strong> Quando estiver no parque, proteja-se do sol nordestino usando protetor solar, mesmo em dias nublados, para aproveitar o dia inteiro sem preocupações com queimaduras.</li>
+                    <li><strong>Vestuário: </strong> Vista-se com roupas leves e confortáveis, ideais para desfrutar das várias atrações sem restrições.</li>
+                    <li><strong>Ingressos e Acomodações: </strong> Além disso, considere fazer reservas antecipadas para ingressos e hospedagem, especialmente se planeja ficar nos resorts exclusivos como o Beach Park Acqua Resort ou o Suites Beach Park Resort, garantindo assim uma estadia sem contratempos.</li>
+                </ul>
+                <p>No Beach Park, cada toboágua e atração é projetado para oferecer uma experiência única e emocionante, tais como:</p>
+                <ul>
+                    <li><strong>Insano: </strong>Com uma altura de 41 metros, é um dos toboáguas mais altos do mundo, oferecendo uma descida quase vertical e uma adrenalina incomparável.</li>
+                    <li><strong>Arrepius: </strong>Toboágua com curvas fechadas e velocidade intensa, perfeito para os amantes de emoções fortes.</li>
+                    <li><strong>Acqua Circo: </strong>  Área dedicada às crianças, com toboáguas menores, piscinas rasas e brinquedos interativos, proporcionando diversão segura para os pequenos.</li>
+                    <li><strong>Correnteza Encantada: </strong> Um rio lento que percorre o parque, permitindo aos visitantes relaxar e apreciar a paisagem enquanto flutuam suavemente pela água.</li>
+                    <li><strong>Praia do Beach Park: </strong> Além das piscinas e atrações do parque, os visitantes podem desfrutar de uma praia exclusiva, ideal para relaxar após um dia de atividades aquáticas.</li>
+                    
+                </ul>
+            </article>
+        </section>
+        <figure class="figure-dicas">
+            <img src="img/BeachPark/beach1.jfif" alt="Beach" class="imagem-dicas">
+            <img src="img/BeachPark/beach2.jpg" alt="Beach" class="imagem-dicas">
+            <img src="img/BeachPark/beach3.jpg" alt="Beach" class="imagem-dicas">
+            <img src="img/BeachPark/beach5.jpeg" alt="Beach" class="imagem-dicas">
+            
+        </figure>
+       
+        <section id="hospedagem">
+            <article>
+                <h2>Hospedagem</h2>
+                <p>Para garantir uma experiência completa no Beach Park, considere hospedar-se nos confortáveis resorts dentro do complexo, como o Beach Park Acqua Resort, que oferece acesso exclusivo ao parque, piscinas temáticas, restaurantes gourmet e serviços de spa para momentos de relaxamento total. O Suites Beach Park Resort também é uma excelente opção para famílias maiores, com suítes espaçosas e todas as comodidades necessárias para uma estadia confortável e conveniente.</p>
+                <p>Para aqueles que preferem outras opções de hospedagem, há uma variedade de hotéis e pousadas em Porto das Dunas, próximos ao Beach Park, que oferecem desde acomodações simples até opções mais luxuosas, todas com fácil acesso ao parque aquático. Chegar ao Beach Park a partir de Fortaleza é simples e direto, seguindo pela CE-040 em direção a Aquiraz/Porto das Dunas, uma rota bem sinalizada que garante uma viagem tranquila e sem complicações.</p>
+            </article>
+        </section>
+        <figure>
+            <img src="img/BeachPark/beach6.jpg" alt="Beach" class="imagem-hospedagem">
+            
+        </section>
+    </main>
+    <footer>
+        <p>Até o nosso próximo destino!</p>
+    </footer>
+</body>
+</html>

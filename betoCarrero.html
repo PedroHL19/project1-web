@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beto Carrero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      
+        body {
+            background: linear-gradient(to bottom right, #ADD8E6, #B0E0E6);
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+  
+        header {
+            background: rgba(255,255,255, 0.5);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+            color: #333;
+            transition: transform 0.3s ease;
+            margin:0px 0px 0px 20px;
+        }
+        header h1:hover{
+            transform: scale(1.25);
+        
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            transition: color 0.2s ease;
+        }
+        
+        nav ul li a:hover {
+            color:  #87CEEB;
+            text-decoration: underline;
+        }
+        
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        article {
+            max-width: 900px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0px 20px 0px;
+        }
+        
+        .imagem-dicas, .imagem-sobre, .imagem-hospedagem {
+            width: 100%;
+        
+            height: auto;
+            max-height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            object-fit: cover; 
+            max-width: 800px; 
+            margin: 20px 0px 20px 0px;
+        }
+        .imagem-sobre{
+            max-height: 700px;
+        }
+        .figure-dicas{
+            display: grid;
+
+           
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.5rem;
+            
+            
+           
+        }
+      
+        footer {
+            background: rgba(255,255,255, 0.5);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+        
+        footer p {
+            font-size: 1rem;
+            text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5);
+            color: #333;
+          
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Beto Carrero </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#hospedagem">Hospedagem</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="sobre">
+            <article>
+                <h2>Sobre o Beto Carrero</h2>
+                <p>Beto Carrero World é um parque temático localizado em Penha, Santa Catarina, Brasil. Inaugurado em 28 de dezembro de 1991, o parque foi idealizado por João Batista Sérgio Murad, mais conhecido como Beto Carrero. Inspirado nos grandes parques temáticos internacionais, Beto Carrero teve a visão de criar um lugar mágico no Brasil. Com o passar dos anos, o parque cresceu e se tornou o maior parque temático da América Latina, atraindo milhões de visitantes anualmente. Hoje, o parque é uma mistura de atrações modernas e shows ao vivo, mantendo sempre viva a memória e o espírito aventureiro de seu fundador.</p>
+            </article>
+        </section>
+        <figure>
+           
+            <img src="img/BetoCarrero/beto.jpg" alt="Guanabara" class="imagem-sobre">
+        </figure>
+        
+        <section id="dicas">
+            <article>
+                <h2>Dicas e Atrações</h2>
+                <p>Para quem planeja visitar o Beto Carrero World, algumas dicas são essenciais:</p>
+                <ul>
+                    <li><strong>Melhor época para visitar:</strong> A melhor época para visitar é durante os meses de baixa temporada (março a junho e agosto a novembro), quando as multidões são menores e é possível aproveitar mais as atrações.</li>
+                    <li><strong>Horário:</strong> Chegar cedo é fundamental para explorar tudo o que o parque oferece, pois ele é grande e há muito o que ver e fazer.</li>
+                    <li><strong>Outras dicas:</strong> Usar roupas confortáveis e levar protetor solar são recomendações importantes. Também é útil levar um boné ou chapéu, óculos de sol e uma garrafa de água reutilizável. Dentro do parque, há diversas opções de alimentação, desde lanches rápidos até restaurantes com refeições completas.</li>
+                </ul>
+                <p>Beto Carrero World possui uma vasta gama de atrações para todas as idades. Entre as mais populares estão:</p>
+                <ul>
+                    <li><strong>FireWhip:</strong>  A primeira montanha-russa invertida do Brasil, que oferece uma experiência radical com várias inversões.</li>
+                    <li><strong>Star Mountain:</strong>  Uma emocionante montanha-russa que proporciona muita adrenalina.</li>
+                    <li><strong>Raskapuska:</strong>  Um passeio tranquilo em barcos que leva os visitantes por um mundo encantado.</li>
+                    <li><strong>Madagascar Crazy River Adventure:</strong> Um passeio aquático temático inspirado no filme Madagascar!</li>
+                    <li><strong>Shows ao Vivo:</strong> Espetáculos como "Hot Wheels Epic Show", "O Sonho do Cowboy" e shows de personagens como Madagascar e Shrek.</li>
+                    
+                </ul>
+            </article>
+        </section>
+        <figure class="figure-dicas">
+            <img src="img/BetoCarrero/beto2.jpeg" alt="BetoCarrero" class="imagem-dicas">
+            <img src="img/BetoCarrero/beto3.jpeg" alt="BetoCarrero" class="imagem-dicas">
+            <img src="img/BetoCarrero/beto4.jpeg" alt="BetoCarrero" class="imagem-dicas">
+            <img src="img/BetoCarrero/beto5.jpeg" alt="BetoCarrero" class="imagem-dicas">
+            
+        </figure>
+       
+        <section id="hospedagem">
+            <article>
+                <h2>Hospedagem</h2>
+                <p>Na região de Penha e arredores, há diversas opções de hospedagem. Entre elas, o Vila Olaria Hotel, que fica próximo ao parque e oferece conforto e comodidade com café da manhã incluído. A Pousada Pedra da Ilha oferece uma experiência mais sofisticada, com vista para o mar, e a Hospedaria Refúgio das Galés é uma opção charmosa e acolhedora, também perto do parque.</p>
+                <p>Para chegar ao Beto Carrero World, o aeroporto mais próximo é o Aeroporto Internacional de Navegantes (NVT), a aproximadamente 12 km de Penha. De lá, você pode pegar um táxi ou um transfer até o parque. Se preferir viajar de carro, o parque está localizado a cerca de 110 km de Florianópolis e a 60 km de Balneário Camboriú, com acesso pelas rodovias BR-101 e SC-414. Há também várias empresas de ônibus que operam linhas regulares para Penha, com saídas de várias cidades do Brasil. Do terminal rodoviário, é possível pegar um táxi ou transporte público até o parque.</p>
+            </article>
+        </section>
+        <figure>
+            <img src="img/BetoCarrero/beto6.jpg" alt="BetoCarrero" class="imagem-hospedagem">
+            
+        </section>
+    </main>
+    <footer>
+        <p>Até o nosso próximo destino!</p>
+    </footer>
+</body>
+</html>
